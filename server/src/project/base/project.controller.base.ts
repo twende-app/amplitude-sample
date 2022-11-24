@@ -264,6 +264,7 @@ export class ProjectControllerBase {
         },
 
         createdAt: true,
+        description: true,
         estimation: true,
         id: true,
 

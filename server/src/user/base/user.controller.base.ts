@@ -326,6 +326,7 @@ export class UserControllerBase {
         },
 
         createdAt: true,
+        description: true,
         estimation: true,
         id: true,
 

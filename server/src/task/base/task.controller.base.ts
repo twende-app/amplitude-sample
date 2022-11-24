@@ -69,6 +69,7 @@ export class TaskControllerBase {
         },
 
         createdAt: true,
+        description: true,
         estimation: true,
         id: true,
 
@@ -108,6 +109,7 @@ export class TaskControllerBase {
         },
 
         createdAt: true,
+        description: true,
         estimation: true,
         id: true,
 
@@ -148,6 +150,7 @@ export class TaskControllerBase {
         },
 
         createdAt: true,
+        description: true,
         estimation: true,
         id: true,
 
@@ -211,6 +214,7 @@ export class TaskControllerBase {
           },
 
           createdAt: true,
+          description: true,
           estimation: true,
           id: true,
 
@@ -259,6 +263,7 @@ export class TaskControllerBase {
           },
 
           createdAt: true,
+          description: true,
           estimation: true,
           id: true,
 

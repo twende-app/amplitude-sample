@@ -16,8 +16,8 @@ import {
   ValidateNested,
   IsOptional,
   IsDate,
-  IsInt,
   IsString,
+  IsInt,
   IsEnum,
 } from "class-validator";
 import { Type } from "class-transformer";
@@ -41,6 +41,17 @@ class Task {
   @Type(() => Date)
   @Field(() => Date)
   createdAt!: Date;
+
+  @ApiProperty({
+    required: false,
+    type: String,
+  })
+  @IsString()
+  @IsOptional()
+  @Field(() => String, {
+    nullable: true,
+  })
+  description!: string | null;
 
   @ApiProperty({
     required: false,
