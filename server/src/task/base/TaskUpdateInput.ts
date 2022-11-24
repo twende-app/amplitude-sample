@@ -15,10 +15,10 @@ import { UserWhereUniqueInput } from "../../user/base/UserWhereUniqueInput";
 import {
   ValidateNested,
   IsOptional,
+  IsString,
   IsInt,
   IsDate,
   IsEnum,
-  IsString,
 } from "class-validator";
 import { Type } from "class-transformer";
 import { ProjectWhereUniqueInput } from "../../project/base/ProjectWhereUniqueInput";
@@ -36,6 +36,17 @@ class TaskUpdateInput {
     nullable: true,
   })
   assignedTo?: UserWhereUniqueInput | null;
+
+  @ApiProperty({
+    required: false,
+    type: String,
+  })
+  @IsString()
+  @IsOptional()
+  @Field(() => String, {
+    nullable: true,
+  })
+  description?: string | null;
 
   @ApiProperty({
     required: false,

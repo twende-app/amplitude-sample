@@ -6,9 +6,9 @@ import {
   EditProps,
   ReferenceInput,
   SelectInput,
+  TextInput,
   NumberInput,
   DateTimeInput,
-  TextInput,
 } from "react-admin";
 
 import { UserTitle } from "../user/UserTitle";
@@ -21,6 +21,7 @@ export const TaskEdit = (props: EditProps): React.ReactElement => {
         <ReferenceInput source="user.id" reference="User" label="Assigned To">
           <SelectInput optionText={UserTitle} />
         </ReferenceInput>
+        <TextInput label="Description" multiline source="description" />
         <NumberInput step={1} label="Estimation" source="estimation" />
         <ReferenceInput source="project.id" reference="Project" label="Project">
           <SelectInput optionText={ProjectTitle} />

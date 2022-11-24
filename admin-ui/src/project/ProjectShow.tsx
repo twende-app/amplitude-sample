@@ -38,6 +38,7 @@ export const ProjectShow = (props: ShowProps): React.ReactElement => {
               <TextField source={USER_TITLE_FIELD} />
             </ReferenceField>
             <DateField source="createdAt" label="Created At" />
+            <TextField label="Description" source="description" />
             <TextField label="Estimation" source="estimation" />
             <TextField label="ID" source="id" />
             <ReferenceField
